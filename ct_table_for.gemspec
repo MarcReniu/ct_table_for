@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 5.0"
-  s.add_dependency "bootstrap-sass", "~> 3.3"
+  s.add_dependency "bootstrap-sass", "= 4.0.0.alpha5"
   s.add_dependency "font-awesome-sass", "~> 4.7"
   s.add_dependency "include_media_rails", "~> 1.4"
 end

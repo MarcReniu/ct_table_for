@@ -23,8 +23,8 @@ module CtTableFor
 
     def table_for model, collection, options: {}
       custom_id = options[:id].present? ? %Q{id="#{options[:id]}"} : ""
-      html = %Q{<div class="table-responsive">}
-        html << %Q{<table #{custom_id} class="ct-table table table-striped table-bordered table-condensed table-hover #{options[:class]}">}
+      html = %Q{<div class="">}
+        html << %Q{<table #{custom_id} class="ct-table table table-striped table-bordered table-condensed table-hover table-responsive #{options[:class]}">}
           html << table_for_header(model, has_actions: options[:actions].present?, options: options)
           html << table_for_content(model, collection, options: options)
         html << %Q{</table>}

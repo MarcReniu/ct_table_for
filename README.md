@@ -4,7 +4,7 @@
 
 ## Requirements
 
-* Twitter Bootstrap 3.0+
+* Twitter Bootstrap 4
 * Fontawesome
 * include media
 
