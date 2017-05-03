@@ -1,0 +1,15 @@
+es:
+  table_for:
+    actions: Acciones
+    buttons:
+      back: Atrás
+      create: Crear
+      delete: :'table_for.buttons.destroy'
+      destroy: Eliminar
+      edit: Editar
+      new: Nuevo
+      show: Ver
+      update: Actualiza
+    messages:
+      are_you_sure: ¿Está seguro?
+      no_records: No hay registros

@@ -1,0 +1,50 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "include_media";
+
+$breakpoints: (desktop: 992px);
+
+.ct-table {
+}
+@include media(">=desktop") {
+  // table as a table
+}
+@include media("<desktop") {
+  // table as cards
+  .ct-table {
+		thead {
+			display: none;
+      visibility: hidden;
+		}
+		tbody, tr, th, td {
+			border: 0;
+			display: block;
+			padding: 0;
+			text-align: left;
+		  white-space: normal;
+		}
+
+    // give each row a little space
+		tr {
+      padding: .5rem;
+		}
+		th[data-title]:before,
+		td[data-title]:before {
+			content: attr(data-title) ":\00A0";
+			font-weight: bold;
+		}
+		th:not([data-title]) {
+			font-weight: bold;
+		}
+
+    // hide empty cells
+		td:empty {
+		    display: none;
+		}
+    &.table-bordered > tbody > tr > td {
+      border-color: transparent;
+    }
+	}
+}

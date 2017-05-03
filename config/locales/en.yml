@@ -1,0 +1,15 @@
+en:
+  table_for:
+    actions: Actions
+    buttons:
+      back: Back
+      create: Create
+      delete: :'table_for.buttons.destroy'
+      destroy: Delete
+      edit: Edit
+      new: New
+      show: Show
+      update: Update
+    messages:
+      are_you_sure: Are you sure?
+      no_records: No records found
