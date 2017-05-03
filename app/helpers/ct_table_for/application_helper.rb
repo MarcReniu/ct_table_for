@@ -6,15 +6,17 @@ module CtTableFor
     # RWD Table
     # use as: table_for Model, @collection, options: {}
     # options: {
-    #   actions: %w(show, edit),             // Array: of string of actions
+    #   actions: { 
+    #     buttons: %w(show, edit)},          // Hash: with array of buttons for actions
+    #     premodel: [:bo, :admin],           // Array: of symbols for nested namespaces/models
+    #     icons: true                        // Boolean: if true show actions as icons
+    #   }
     #   attributes: %(name:sortable email),  // Array: of model attibutes to show in table
     #                                        // with extra parameter `:` add cell options (sort, image size)
     #                                        // if the attribute is a relation pass the attribute to show
     #                                        // if the attribute has an association will show a number with the count
     #   id: "my-id",                         // String: adds custom id to <table> element
     #   class: "my-custom-css",              // String: add custom class to <table> element
-    #   icons: true,                         // Boolean: if true show actions as icons
-    #   premodel: [:bo, :admin]              // Array: of symbols for nested namespaces/models
     #   tr_class: "my-custom-css"            // String: add custom class to <tr> element
     #}
     ####################################################################################
