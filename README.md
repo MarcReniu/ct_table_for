@@ -12,7 +12,7 @@
 
 Add it to your Gemfile:
 
-`gem 'ct_table_for', '~> 0.1.6alpha'`
+`gem 'ct_table_for', '~> 0.1.6.alpha.1'`
 
 Then:
 
